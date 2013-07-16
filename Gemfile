@@ -1,38 +1,32 @@
 source 'https://rubygems.org'
-
+ruby '1.9.3'
 gem 'rails', '3.2.12'
+gem 'pg'
+gem 'jquery-rails'
+gem 'authlogic'
+gem 'simple_form'
+gem 'bootstrap-wysihtml5-rails'
+gem "rails3-generators"
+gem 'roo'
+gem "font-awesome-rails"
+gem "ordered-active-record", "~> 0.9.7"
+gem "googlecharts", "~> 1.6.8"
+gem 'exception_notification'
+gem 'ui_datepicker-rails3'
+gem 'jquery-ui-rails'
+gem "watu_table_builder", :require => "table_builder"
+gem 'prawn_rails'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+      gem 'sass-rails',   '~> 3.2.3'
+      gem 'coffee-rails', '~> 3.2.1'
+      gem 'uglifier', '>= 1.0.3'
+      gem 'bootstrap-sass'
 end
 
-gem 'jquery-rails'
+group :test, :development do
+      gem "letter_opener"
+      gem "sextant"
+end
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
