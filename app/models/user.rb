@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
   acts_as_authentic 
-  attr_accessible :email ,:password, :password_confirmation, :full_name, :phone
+  #attr_accessible :email ,:password, :password_confirmation, :full_name, :phone
   
 end

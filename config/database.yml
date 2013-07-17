@@ -7,7 +7,7 @@ development:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: profe_farmacia_dario
+  database: profe_farmacia
   pool: 5
   username: postgres
   password: 3833105m
