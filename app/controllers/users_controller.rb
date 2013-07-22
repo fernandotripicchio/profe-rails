@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :require_user#, :only => [:show, :edit, :update]
+  before_filter :current_user
 
   def new
     @user = User.new
@@ -7,15 +7,11 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-
-    # Saving without session maintenance to skip
-    # auto-login which can't happen here because
-    # the User has not yet been activated
     if @user.save
-      flash[:notice] = "Your account has been created."
-      redirect_to signup_url
+      flash[:notice] = "Se ha creado un nuevo usuario."
+      redirect_to users_path
     else
-      flash[:notice] = "There was a problem creating you."
+      flash[:error] = "Ha ocurrido un problema cuando el usuario era creado."
       render :action => :new
     end
 
@@ -37,6 +33,10 @@ class UsersController < ApplicationController
     else
       render :action => :edit
     end
+  end
+  
+  def index
+    
   end
   
 end
