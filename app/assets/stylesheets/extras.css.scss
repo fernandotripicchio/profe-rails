@@ -30,27 +30,26 @@
      text-align: center !important;
 }
 
-.sizeStaticText{
-  width: 95%;
+.sizeStaticText {
+    width: 95%;
 }
 .staticText {
-  font-size: 1.0em !important;
+    font-size: 1.0em !important;
   
 }
 
-.table-centered
-{
-  margin: 0 auto !important;
-  float: none !important;
+.table-centered {
+   margin: 0 auto !important;
+   float: none !important;
 }
 
 .popover{
-  max-width: 500px !important;
+    max-width: 500px !important;
 }
 
 
 .noTopBorder{
-  border-top:1px solid transparent!important;
+    border-top:1px solid transparent!important;
 }
 
 .noMargin{
@@ -58,12 +57,12 @@
 }
 
 .column100{
-    width: 99%;
+   width: 99%;
 }
 
 .icon-plus-sign, .icon-remove-sign {
-  background-position: 0px !important;
-  background-image: none;
+   background-position: 0px !important;
+   background-image: none;
 }
 
 
@@ -72,12 +71,33 @@
 }
 
 .navbar .brand {
-float: left;
-display: block;
-padding: 8px 20px 12px 20px;
-margin-left: -20px;
-font-size: 20px;
-font-weight: 200;
-line-height: 1;
-color: #ffffff;
+   float: left;
+   display: block;
+   padding: 8px 20px 12px 20px;
+   margin-left: -20px;
+   font-size: 20px;
+   font-weight: 200;
+   line-height: 1;
+   color: #ffffff;
 }
+
+.form-horizontal .controls {
+   margin-left: 100px !important;
+   float: left;
+}
+
+.form-horizontal .control-label {
+   float: left;
+   width: 120px;
+   padding-top: 5px;
+   text-align: right;
+}
+
+.form-horizontal label{
+  width: 120px !important;
+  float: left;
+}
+ 
+ .controls {
+     margin-left: 10px !important;
+ } 
