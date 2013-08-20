@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter :require_user
   before_filter :current_user
 
   def new
